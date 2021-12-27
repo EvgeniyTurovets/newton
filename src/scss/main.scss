@@ -20,6 +20,15 @@ body{
     background-size: cover;
     background-position: center;
 }
+.icon{
+    width: auto;
+    height: auto;
+}
+.app{
+    max-width: 2400px;
+    width: 100%;
+    margin: 0 auto;
+}
 // подключения компонентов страницы
 @import "./components/header";
 @import "./components/index";

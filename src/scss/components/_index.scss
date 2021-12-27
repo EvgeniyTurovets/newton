@@ -5,8 +5,9 @@ body{
 .sec1{
     position: relative;
     height: 100vh;
-    min-height: 700px;
-    padding-top: 305px;
+    max-height: 1080px;
+    display: flex;
+    align-items: center;
 }
 
 .sec1__shadow{
@@ -18,7 +19,8 @@ body{
     overflow: hidden;
     z-index: 1;
     background-image: url('../img/index/shadow.png');
-    background-size: 100%;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
 
@@ -26,18 +28,25 @@ body{
     display: flex;
     position: relative;
     z-index: 2;
+    align-items: center;
+    padding-top: 155px;
+    padding-bottom: 55px;
 }
 .sec1__left{
     flex: 1;
+    padding-left: 272px;
+    padding-bottom: 180px;
 }
 .sec1__right{
-    flex: 0 0 174px;
+    flex: 0 0 505px;
+    width: 505px;
 }
 .sec1__title{
     font-weight: bold;
     font-size: 60px;
     line-height: 110%;
     color: #FFFFFF;
+    margin-bottom: 25px;
 }
 
 .sec1__text{
@@ -45,12 +54,10 @@ body{
     font-size: 26px;
     line-height: 130%;
     color: #FFFFFF;
+    margin-bottom: 66px;
 }
 
-.sec1__left{
-    display: flex;
-    justify-content: center;
-}
+
 
 .btn-play{
     display: flex;
@@ -121,7 +128,7 @@ body{
 
 	70% {
 		
-		box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+		box-shadow: 0 0 0 15px rgba(255, 255, 255, 0);
 	}
 
 	100% {
@@ -130,3 +137,57 @@ body{
 	}
 }
 
+.sec1__row{
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+.sec1__row span{
+    width: 31px;
+    min-width: 31px;
+    height: 31px;
+    background: #568F27;
+    border-radius: 100%;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg{
+        width: 13px;
+        height: 8px;
+    }
+}
+@media(max-height: 850px){
+    .sec1__title{
+        font-size: 50px;
+    }
+    .sec1__text{
+        font-size: 24px;
+        margin-bottom: 45px;
+    }
+    .sec1__right{
+        flex: 0 0 495px;
+        width: 495px;
+    }
+    .sec1__row{
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .sec1__left{
+        padding-bottom: 85px;
+    }
+}
+@media(max-height: 700px){
+    .sec1{
+        height: auto;
+    }
+}
+
+@media(max-width: 1200px){
+    .sec1{
+        height: auto;
+    }
+}
