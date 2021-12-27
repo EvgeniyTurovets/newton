@@ -1,0 +1,364 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+}
+
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1;
+}
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px;
+}
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-MediumItalic.eot");
+  src: local("Graphik LCG Medium Italic"), local("../fonts/GraphikLCG/GraphikLCG-MediumItalic"), url("../fonts/GraphikLCG/GraphikLCG-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-MediumItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-MediumItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-SuperItalic.eot");
+  src: local("Graphik LCG Super Italic"), local("../fonts/GraphikLCG/GraphikLCG-SuperItalic"), url("../fonts/GraphikLCG/GraphikLCG-SuperItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-SuperItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-SuperItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-SuperItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic.eot");
+  src: local("Graphik LCG Semibold Italic"), local("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic"), url("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Black.eot");
+  src: local("Graphik LCG Black"), local("../fonts/GraphikLCG/GraphikLCG-Black"), url("../fonts/GraphikLCG/GraphikLCG-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Black.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Black.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Super.eot");
+  src: local("Graphik LCG Super"), local("../fonts/GraphikLCG/GraphikLCG-Super"), url("../fonts/GraphikLCG/GraphikLCG-Super.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Super.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Super.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Super.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Thin.eot");
+  src: local("Graphik LCG Thin"), local("../fonts/GraphikLCG/GraphikLCG-Thin"), url("../fonts/GraphikLCG/GraphikLCG-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Thin.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Thin.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic.eot");
+  src: local("Graphik LCG Extralight Italic"), local("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic"), url("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-ExtralightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Regular.eot");
+  src: local("Graphik LCG Regular"), local("../fonts/GraphikLCG/GraphikLCG-Regular"), url("../fonts/GraphikLCG/GraphikLCG-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Regular.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Regular.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-BoldItalic.eot");
+  src: local("Graphik LCG Bold Italic"), local("../fonts/GraphikLCG/GraphikLCG-BoldItalic"), url("../fonts/GraphikLCG/GraphikLCG-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-BoldItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-BoldItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-LightItalic.eot");
+  src: local("Graphik LCG Light Italic"), local("../fonts/GraphikLCG/GraphikLCG-LightItalic"), url("../fonts/GraphikLCG/GraphikLCG-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-LightItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-LightItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-BlackItalic.eot");
+  src: local("Graphik LCG Black Italic"), local("../fonts/GraphikLCG/GraphikLCG-BlackItalic"), url("../fonts/GraphikLCG/GraphikLCG-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-BlackItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-BlackItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Medium.eot");
+  src: local("Graphik LCG Medium"), local("../fonts/GraphikLCG/GraphikLCG-Medium"), url("../fonts/GraphikLCG/GraphikLCG-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Medium.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Medium.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Light.eot");
+  src: local("Graphik LCG Light"), local("../fonts/GraphikLCG/GraphikLCG-Light"), url("../fonts/GraphikLCG/GraphikLCG-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Light.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Light.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Semibold.eot");
+  src: local("Graphik LCG Semibold"), local("../fonts/GraphikLCG/GraphikLCG-Semibold"), url("../fonts/GraphikLCG/GraphikLCG-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Semibold.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Semibold.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Bold.eot");
+  src: local("Graphik LCG Bold"), local("../fonts/GraphikLCG/GraphikLCG-Bold"), url("../fonts/GraphikLCG/GraphikLCG-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Bold.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Bold.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-Extralight.eot");
+  src: local("Graphik LCG Extralight"), local("../fonts/GraphikLCG/GraphikLCG-Extralight"), url("../fonts/GraphikLCG/GraphikLCG-Extralight.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-Extralight.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-Extralight.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-Extralight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-ThinItalic.eot");
+  src: local("Graphik LCG Thin Italic"), local("../fonts/GraphikLCG/GraphikLCG-ThinItalic"), url("../fonts/GraphikLCG/GraphikLCG-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-ThinItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-ThinItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Graphik LCG";
+  src: url("../fonts/GraphikLCG/GraphikLCG-RegularItalic.eot");
+  src: local("Graphik LCG Regular Italic"), local("../fonts/GraphikLCG/GraphikLCG-RegularItalic"), url("../fonts/GraphikLCG/GraphikLCG-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GraphikLCG/GraphikLCG-RegularItalic.woff2") format("woff2"), url("../fonts/GraphikLCG/GraphikLCG-RegularItalic.woff") format("woff"), url("../fonts/GraphikLCG/GraphikLCG-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "asd", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.site-container {
+  overflow: hidden;
+}
+
+.is-hidden {
+  display: none !important;
+}
+
+.btn-reset {
+  border: none;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.list-reset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1200px;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}
+
+body {
+  font-family: "Graphik LCG";
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+.wrap {
+  max-width: 1260px;
+  padding: 0 30px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sec {
+  background-size: cover;
+  background-position: center;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  padding-top: 48px;
+}
+
+.sec1 {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  padding-top: 305px;
+}
+
+.sec1__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  z-index: 1;
+  background-image: url("../img/index/shadow.png");
+  background-size: 100%;
+}
+
+.sec1__wrap {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.sec1__left {
+  flex: 1;
+}
+
+.sec1__right {
+  flex: 0 0 174px;
+}
+
+.sec1__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 110%;
+  color: #FFFFFF;
+}
+
+.sec1__text {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  color: #FFFFFF;
+}
+
+.sec1__left {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-play {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 110%;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.btn-play__icon {
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  border-radius: 100%;
+  margin-bottom: 23px;
+  transition: 0.3s all;
+  position: relative;
+  box-shadow: 0 0 0 0 white;
+  transform: scale(1);
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+}
+.btn-play__icon svg {
+  width: 21px;
+  margin-left: 5px;
+  transition: 0.3s all;
+}
+
+.btn-play__icon:before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #FFFFFF;
+  border-radius: 100%;
+  position: absolute;
+  transition: 0.3s all;
+  opacity: 0;
+}
+
+.btn-play:hover .btn-play__icon {
+  -webkit-animation: none;
+  animation: none;
+}
+.btn-play:hover .btn-play__icon:before {
+  top: -6px;
+  left: -6px;
+  bottom: -6px;
+  right: -6px;
+  opacity: 1;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
