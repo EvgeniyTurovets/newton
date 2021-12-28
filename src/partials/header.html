@@ -3,7 +3,7 @@
         <div class="header__wrap">
             <div class="header__wrap__left">
                 <a href="index.html" class="logo">
-                <img src="../img/logo.svg">
+                <img src="./img/logo.svg">
                 </a>
                 <div class="header__text">
                 Умный жилой комплекс 
@@ -14,13 +14,33 @@
                 <div class="header__phone">
                     +7 495 745 75 75
                 </div>
-                <div class="header__flat">
+                <a href="tel:+74957457575" class="header__phone__icon">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                </a>
+                <div class="header__flat" id="header__flat">
                     выбор квартир 
                     <span class="header__flat__arr">
                         <svg class="icon">
                         <use xlink:href="./img/sprite.svg#v"></use>
                         </svg>
                     </span>
+
+                    <ul class="header__flat__list">
+                        <li>
+                            <a href="">Квартира</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 2</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 3</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 4</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="header-menu">
                     <div class="burger" id="burger">
@@ -32,7 +52,7 @@
                         </svg>
                     </div>
 
-                    <nav class="header__nav">
+                    <nav class="header__nav" id="header__nav">
                         <ul>
                             <li class="active">
                                 <a href="">О проекте</a>
