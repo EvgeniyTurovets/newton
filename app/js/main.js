@@ -172,6 +172,17 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', function () {
     refreshHeader();
   });
+  var swiper = new Swiper('.sec2__slider', {
+    // If we need pagination
+    spaceBetween: 20,
+    speed: 500,
+    pagination: {
+      el: '.swiper-pagination'
+    },
+    autoplay: {
+      delay: 5000
+    }
+  });
 });
 "use strict";
 //# sourceMappingURL=main.js.map
