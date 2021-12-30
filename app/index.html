@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    <header class="header" id="header">
+    <div class="wrap">
+        <div class="header__wrap">
+            <div class="header__wrap__left">
+                <a href="index.html" class="logo">
+                <img src="./img/logo.svg">
+                </a>
+                <div class="header__text">
+                Умный жилой комплекс 
+                рядом с набережной
+                 </div>
+            </div>
+            <div class="header__wrap__right">
+                <div class="header__phone">
+                    +7 495 745 75 75
+                </div>
+                <a href="tel:+74957457575" class="header__phone__icon">
+                    <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                </a>
+                <button type="button" class="header__flat" id="header__flat">
+                    выбор квартир 
+                    <span class="header__flat__arr">
+                        <svg class="icon">
+                        <use xlink:href="./img/sprite.svg#v"></use>
+                        </svg>
+                    </span>
+
+                    <ul class="header__flat__list">
+                        <li>
+                            <a href="">Квартира</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 2</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 3</a>
+                        </li>
+                        <li>
+                            <a href="">Квартира 4</a>
+                        </li>
+                    </ul>
+                </button>
+                <div class="header-menu">
+                    <button type="button" class="burger" id="burger">
+                        <svg class="icon">
+                            <use xlink:href="./img/sprite.svg#burger"></use>
+                        </svg>
+                        <svg class="icon close">
+                            <use xlink:href="./img/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+
+                    <nav class="header__nav" id="header__nav">
+                        <ul>
+                            <li class="active">
+                                <a href="">О проекте</a>
+                            </li>
+                            <li>
+                                <a href="">Расположение</a>
+                            </li>
+                            <li>
+                                <a href="">Инфраструктура</a>
+                            </li>
+                            <li>
+                                <a href="">Благоустройство</a>
+                            </li>
+                            <li>
+                                <a href="">Апартаменты</a>
+                            </li>
+                            <li>
+                                <a href="">Ход строительства</a>
+                            </li>
+                            <li>
+                                <a href="">Как купить</a>
+                            </li>
+                            <li>
+                                <a href="">О застройщике</a>
+                            </li>
+                            <li>
+                                <a href="">Контакты</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+    <main class="main">
+      <div class="sec sec1" style="background-image: url('./img/index/sec1.jpg');">
+        <div class="sec1__shadow"></div>
+        <div class="wrap">
+          <div class="sec1__wrap">
+            <div class="sec1__col sec1__left">
+              <a href="./video/1.mp4" data-video-poster="./img/index/sec1.jpg" data-fslightbox="html5-demo-videos" class="btn-play" id="btn_play">
+                <div class="btn-play__icon">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#play"></use>
+                  </svg>
+                </div>
+                смотреть
+              </a>
+            </div>
+            <div class="sec1__col sec1__right">
+              <div class="sec1__title">
+                Newton Apartments
+              </div>
+              <div class="sec1__text">
+                Умный жилой комплекс рядом с набережной
+              </div>
+              <div class="sec1__list">
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  2 станции метро в пешей доступности — 15 минут метро Нагатинская и 25 минут до метро Коломенская
+                </div>
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Набережная в пяти минутах ходьбы
+                </div>
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Непревзойденный вид из окна
+                </div>
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Инфраструктура с мини-кинотеатром, SPA и конференц-комнатами
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec-center sec-shadow sec2" style="background-image: url('./img/index/sec2.jpg');">
+        <div class="wrap">
+          <div class="sec2__slider swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="sec2__wrap">
+                  <div class="sec2__left">
+                    <div class="title white">Жизнь в движении</div>
+                    <div class="sub-title white">Дом в 30 мин от центра Москвы, вблизи реки и парка</div>
+                  </div>
+                  <div class="sec2__right">
+                    Всего в двадцати пяти минутах от жилого комплекса находится парк-усадьба Коломенское — самый огромный зелёный массив нашей столицы. Это заповедная зона была царской резиденцией и сейчас является настоящим природно-ландшафтным музеем. Вас ждёт 390 гектар настоящего оазиса в сердце Москвы, включая древнейший Вознесенский сад и многочисленные архитектурные достопримечательности.
+                    <button type="button">Читать полностью</button>
+                  </div>
+                </div>
+
+                <div class="sec2__wrap2">
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Коломенское парк-усадьба</div>
+                    <div class="mid"></div>
+                    <div class="right">25 мин.</div>
+                  </div>
+
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Москва-река</div>
+                    <div class="mid"></div>
+                    <div class="right">5 мин.</div>
+                  </div>
+                </div>
+                <a href="" target="_blank" class="btn btn-green">на карте</a>
+              </div>
+              <div class="swiper-slide">
+                <div class="sec2__wrap">
+                  <div class="sec2__left">
+                    <div class="title white">Жизнь в движении</div>
+                    <div class="sub-title white">Дом в 30 мин от центра Москвы, вблизи реки и парка</div>
+                  </div>
+                  <div class="sec2__right">
+                    Всего в двадцати пяти минутах от жилого комплекса находится парк-усадьба Коломенское — самый огромный зелёный массив нашей столицы. Это заповедная зона была царской резиденцией и сейчас является настоящим природно-ландшафтным музеем. Вас ждёт 390 гектар настоящего оазиса в сердце Москвы, включая древнейший Вознесенский сад и многочисленные архитектурные достопримечательности.
+                  </div>
+                </div>
+
+                <div class="sec2__wrap2">
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Коломенское парк-усадьба</div>
+                    <div class="mid"></div>
+                    <div class="right">25 мин.</div>
+                  </div>
+
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Москва-река</div>
+                    <div class="mid"></div>
+                    <div class="right">5 мин.</div>
+                  </div>
+                </div>
+                <a href="" target="_blank" class="btn btn-green">на карте</a>
+              </div>
+              <div class="swiper-slide">
+                <div class="sec2__wrap">
+                  <div class="sec2__left">
+                    <div class="title white">Жизнь в движении</div>
+                    <div class="sub-title white">Дом в 30 мин от центра Москвы, вблизи реки и парка</div>
+                  </div>
+                  <div class="sec2__right">
+                    Всего в двадцати пяти минутах от жилого комплекса находится парк-усадьба Коломенское — самый огромный зелёный массив нашей столицы. Это заповедная зона была царской резиденцией и сейчас является настоящим природно-ландшафтным музеем. Вас ждёт 390 гектар настоящего оазиса в сердце Москвы, включая древнейший Вознесенский сад и многочисленные архитектурные достопримечательности.
+                  </div>
+                </div>
+
+                <div class="sec2__wrap2">
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Коломенское парк-усадьба</div>
+                    <div class="mid"></div>
+                    <div class="right">25 мин.</div>
+                  </div>
+
+                  <div class="sec2__wrap2__item">
+                    <div class="left">Москва-река</div>
+                    <div class="mid"></div>
+                    <div class="right">5 мин.</div>
+                  </div>
+                </div>
+                <a href="" target="_blank" class="btn btn-green">на карте</a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec3 sec-shadow" style="background-image: url('./img/index/sec3.jpg');">
+        <div class="wrap">
+
+          <div class="sec3__wrap">
+            <div class="title white sec3__title">Идеальное месторасположение</div>
+
+            <div class="sec2__wrap2 sec3__wrap3">
+              <div class="sec2__wrap2__item sec3__wrap3__item">
+                <div class="left">Коломенское парк-усадьба</div>
+                <div class="mid"></div>
+                <div class="right">25 мин.</div>
+              </div>
+            </div>
+
+            <div class="sec2__wrap2 sec3__wrap3">
+              <div class="sec2__wrap2__item sec3__wrap3__item">
+                <div class="left">Москва-река</div>
+                <div class="mid"></div>
+                <div class="right">5 мин.</div>
+              </div>
+            </div>
+
+            <div class="sec2__wrap2 sec3__wrap3">
+              <div class="sec2__wrap2__item sec3__wrap3__item">
+                <div class="left sec3__left">
+                  <span class="sec3__icon">
+                    <span class="sec3__icon__item">
+                      M
+                    </span>
+                  </span>
+                  15 мин.
+                </div>
+                <div class="mid"></div>
+                <div class="right">Нагатинская</div>
+              </div>
+            </div>
+
+            <div class="mode">
+              <span class="mode__title">Перейти в режим</span>
+
+              <div class="mode__box">
+                <a href="/" class="mode__btn">карта</a>
+                <a href="/" class="mode__btn">copter view</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sec partition">
+        <div class="wrap">
+          <div class="title partition__title">Newton Apartments</div>
+
+          <div class="partition__top">
+            <span class="partition__subtitle">Комфортная жизнь формата под ключ</span>
+            <a href="/" class="btn btn2 btn-green partition-btn" target="_blank">об инфраструктуре</a>
+          </div>
+
+          <div class="swiper partition__slider" id="partition__slider-1">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/apart-1.jpg" alt="" class="partition__img">
+
+                <span class="partition__description">Приватная двухуровневая территория</span>
+
+                <a href="/" class="partition__link">
+                  <span class="icon-arrow-down">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+
+                  <span class="partition__link__text"><span class="text__deg">360 </span>panorama</span>
+
+                </a>
+              </div>
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/apart-2.jpg" alt="" class="partition__img">
+
+                <span class="partition__description">SPA-зоны и ландшафтный дизайн</span>
+
+                <a href="/" class="partition__link">
+                  <span class="icon-arrow-down">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+
+                  <span class="partition__link__text">подробнее</span>
+                </a>
+
+              </div>
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/apart-3.jpg" alt="" class="partition__img">
+
+                <span class="partition__description">Спортивные площадки и теннисные корты</span>
+
+                <a href="/" class="partition__link">
+                  <span class="icon-arrow-down">
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+
+                  <span class="partition__link__text">на плане</span>
+                </a>
+
+              </div>
+
+            </div>
+
+            <div class="custom-pagination partition__pagination">
+              <span class="custom-pagination-bullet"></span>
+              <span class="custom-pagination-bullet"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec swiper half" id="sec5-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide half__slide" style="background-image: url('./img/index/home-1.jpg');">
+            <div class="half__wrap">
+              <div class="custom-pagination sec5-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+
+              <div class="title half__title">Эксклюзивные форматы квартир в доме</div>
+
+              <div class="half__box">
+                <span class="half__number">1</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Панорамные окна</span>
+                </div>
+              </div>
+
+              <p class="half__text">Шикарный вид из окна, который никогда не будет застроен.</p>
+
+              <a href="/" class="arrow-link half__link">
+                <span class="icon-arrow-down">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#v"></use>
+                  </svg>
+                </span>
+                3600 panorama online
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide half__slide" style="background-image: url('./img/index/home-2.jpg');">
+            <div class="half__wrap">
+              <div class="custom-pagination sec5-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+
+              <div class="title half__title">Эксклюзивные форматы квартир в доме</div>
+
+              <div class="half__box">
+                <span class="half__number">2</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Собственное патио на крыше</span>
+                </div>
+              </div>
+
+              <p class="half__text">Индивидуальная зона отдыха только для вас</p>
+
+              <a href="/" class="arrow-link half__link">
+                <span class="icon-arrow-down">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#v"></use>
+                  </svg>
+                </span>
+                3D Copter View
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide half__slide" style="background-image: url('./img/index/home-3.jpg');">
+            <div class="half__wrap">
+              <div class="custom-pagination sec5-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+              <div class="title half__title">Эксклюзивные форматы квартир в доме</div>
+
+              <div class="half__box">
+                <span class="half__number">3</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Продуманные планировки</span>
+                </div>
+              </div>
+
+              <p class="half__text">Комфорт совершенно нового уровня, где всё продумано до мелочей</p>
+
+              <a href="/" class="arrow-link half__link">
+                <span class="icon-arrow-down">
+                  <svg class="icon">
+                    <use xlink:href="./img/sprite.svg#v"></use>
+                  </svg>
+                </span>
+                выбрать на плане
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec partition">
+        <div class="wrap">
+          <div class="title partition__title">Для здоровых телом и духом</div>
+
+          <div class="partition__top">
+            <a href="/" class="btn btn2 btn-green partition-btn" target="_blank">о спортобъектах</a>
+          </div>
+
+          <div class="swiper partition__slider" id="partition__slider-2">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/sport-1.jpg" alt="" class="partition__img">
+
+                <span class="partition__item-title">Теннис</span>
+                <span class="partition__description">На территории комплекса собственные закрытые теннисные корты, где можно заниматься в любую погоду</span>
+
+              </div>
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/sport-2.jpg" alt="" class="partition__img">
+
+                <span class="partition__item-title">Фитнес</span>
+                <span class="partition__description">Современный фитнес-клуб для занятий спортом как в зале, так и на открытом воздухе</span>
+
+              </div>
+
+              <div class="swiper-slide partition__slide">
+                <img src="img/index/sport-3.jpg" alt="" class="partition__img">
+
+                <span class="partition__item-title">Волейбол</span>
+                <span class="partition__description">Для тех, кто любит активный отдых в хорошей компании</span>
+
+              </div>
+
+            </div>
+
+            <div class="custom-pagination partition__pagination">
+              <span class="custom-pagination-bullet"></span>
+              <span class="custom-pagination-bullet"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sec swiper half sec7" id="sec7-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide half__slide sec7__slide sec-shadow" style="background-image: url('./img/index/home-4.jpg');">
+
+            <div class="half__aside">
+              <a href="" target="_blank" class="btn btn-green sec7__btn half__aside__btn">заказать обратный звонок</a>
+            </div>
+
+            <div class="half__wrap sec7__wrap">
+              <div class="custom-pagination sec7-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+
+              <div class="title half__title">Три закона Newton Apartments</div>
+
+              <div class="half__box sec7__box">
+                <span class="half__number">1</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Жилой комплекс 8/80</span>
+                  <p class="half__paragraph">В нашем жилом комплексе каждый найдет для себя нечто по душе: оборудованные площадки для детей, спортивные зоны для взрослых и живописные места для старшего поколения.</p>
+
+                  <p class="half__paragraph"><span class="half__bold">NEWTON APARTMENTS— </span>идеальное место для всей семьи, которое учитывает ваши потребности. Это объединение премиального комфорта, эстетики и здорового образа жизни. Ощутите нашу заботу, даже не выходя за территорию жилого комплекса.</p>
+
+                </div>
+              </div>
+
+              <a href="" target="_blank" class="btn btn-green sec7__btn">подписаться на новости</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide half__slide sec7__slide sec-shadow" style="background-image: url('./img/index/home-4.jpg');">
+
+            <div class="half__aside">
+              <a href="" target="_blank" class="btn btn-green sec7__btn half__aside__btn">заказать обратный звонок</a>
+            </div>
+
+            <div class="half__wrap sec7__wrap">
+              <div class="custom-pagination sec7-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+
+              <div class="title half__title">Три закона Newton Apartments</div>
+
+              <div class="half__box sec7__box">
+                <span class="half__number">1</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Жилой комплекс 8/80</span>
+                  <p class="half__paragraph">В нашем жилом комплексе каждый найдет для себя нечто по душе: оборудованные площадки для детей, спортивные зоны для взрослых и живописные места для старшего поколения.</p>
+
+                  <p class="half__paragraph"><span class="half__bold">NEWTON APARTMENTS— </span>идеальное место для всей семьи, которое учитывает ваши потребности. Это объединение премиального комфорта, эстетики и здорового образа жизни. Ощутите нашу заботу, даже не выходя за территорию жилого комплекса.</p>
+
+                </div>
+              </div>
+
+              <a href="" target="_blank" class="btn btn-green sec7__btn">подписаться на новости</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide half__slide sec7__slide sec-shadow" style="background-image: url('./img/index/home-4.jpg');">
+
+            <div class="half__aside">
+              <a href="" target="_blank" class="btn btn-green sec7__btn half__aside__btn">заказать обратный звонок</a>
+            </div>
+
+            <div class="half__wrap sec7__wrap">
+              <div class="custom-pagination sec7-pagination">
+                <span class="custom-pagination-bullet"></span>
+                <span class="custom-pagination-bullet"></span>
+              </div>
+
+              <div class="title half__title">Три закона Newton Apartments</div>
+
+              <div class="half__box sec7__box">
+                <span class="half__number">1</span>
+                <div class="half__col">
+                  <span class="half__subtitle">Жилой комплекс 8/80</span>
+                  <p class="half__paragraph">В нашем жилом комплексе каждый найдет для себя нечто по душе: оборудованные площадки для детей, спортивные зоны для взрослых и живописные места для старшего поколения.</p>
+
+                  <p class="half__paragraph"><span class="half__bold">NEWTON APARTMENTS— </span>идеальное место для всей семьи, которое учитывает ваши потребности. Это объединение премиального комфорта, эстетики и здорового образа жизни. Ощутите нашу заботу, даже не выходя за территорию жилого комплекса.</p>
+
+                </div>
+              </div>
+
+              <a href="" target="_blank" class="btn btn-green sec7__btn">подписаться на новости</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec sec8" style="background-image: url('./img/index/home-4.jpg');">
+        <div class="wrap">
+          <form class="sec8__form">
+            <input type="text" class="sec8__input sec8__item" placeholder="Имя">
+            <input type="email" class="sec8__input sec8__item" placeholder="E-mail">
+            <input type="tel" class="sec8__input sec8__item" placeholder="Телефон">
+
+            <textarea name="" class="sec8__messages sec8__item" placeholder="Что Вас заинтересовало?"></textarea>
+
+            <a href="" target="_blank" class="btn btn-green sec8__btn">отправить</a>
+          </form>
+        </div>
+      </div>
+
+      <div class="sec sec9 sec-shadow" style="background-image: url('./img/index/towers.jpg');">
+        <div class="wrap">
+          <div class="title sec9__title">Выбор апартаментов</div>
+
+          <div class="sec9__box sec9__white">
+            <a href="/" target="_blank" class="btn sec9__btn">Белая башня</a>
+          </div>
+
+          <div class="sec9__box sec9__steel">
+            <a href="/" target="_blank" class="btn sec9__btn">Стальная башня</a>
+
+            <div class="sec9__subtitle">Корпус 2</div>
+            <div class="sec9__description sec2__wrap2__item">
+              <div class="left">
+                <span class="sec3__icon">
+                  <span class="sec3__icon__item">
+                    е
+                  </span>
+                </span>
+                3к
+              </div>
+              <div class="mid"></div>
+              <div class="right">123 м2</div>
+            </div>
+          </div>
+
+          <div class="mode sec9__mode">
+            <span class="mode__title">Перейти в режим</span>
+
+            <div class="mode__box">
+              <a href="/" class="mode__btn sec9__green">карта</a>
+              <a href="/" class="mode__btn sec9__black">copter view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  </main>
+  <footer class="footer">
+  <div class="container">
+    <div class="footer__wrap">
+
+      <div class="footer__row">
+        <div class="footer__box__6">
+          <span class="footer__text__small">адрес жилого комплекса</span>
+          <span class="footer__text__big">Москва. Нагатинский проезд 8</span>
+        </div>
+
+        <div class="footer__box__6">
+          <span class="footer__text__small">офис продаж</span>
+          <span class="footer__text__big">Москва. Нагатинский проезд, 10 с1 м.Нагатинская</span>
+        </div>
+      </div>
+
+      <div class="footer__row">
+        <div class="footer__box__3 footer__drop">
+          <span class="footer__text__big footer__drop__btn">
+            Информация о проекте
+            <span class="footer__drop__arrow">
+              <svg class="icon">
+                <use xlink:href="./img/sprite.svg#v-black"></use>
+              </svg>
+            </span>
+          </span>
+
+          <div class="footer__drop__box">
+            <a href="#" class="footer__text__small">Проект на ДОМ.РФ</a>
+            <a href="#" class="footer__text__small">Ипотека</a>
+          </div>
+        </div>
+
+        <div class="footer__box__3 footer__drop">
+          <span class="footer__text__big footer__drop__btn">
+            О застройщике
+            <span class="footer__drop__arrow">
+              <svg class="icon">
+                <use xlink:href="./img/sprite.svg#v-black"></use>
+              </svg>
+            </span>
+          </span>
+
+          <div class="footer__drop__box">
+            <a href="#" class="footer__text__small">Портфолио реализованных объектов <span></span></a>
+            <a href="#" class="footer__text__small">Контакты</a>
+          </div>
+        </div>
+
+        <div class="footer__box__3 footer__drop">
+          <span class="footer__text__big footer__drop__btn">
+            Коммерческая недвижимость
+            <span class="footer__drop__arrow">
+              <svg class="icon">
+                <use xlink:href="./img/sprite.svg#v-black"></use>
+              </svg>
+            </span>
+          </span>
+          <div class="footer__drop__box">
+            <a href="#" class="footer__text__small">Схема помещений</a>
+          </div>
+        </div>
+
+        <div class="footer__box__3">
+          <span class="footer__text__small">Подписаться на новости NEWTON APPARTMENTS@</span>
+          <a href="" target="_blank" class="btn btn-green">подписаться</a>
+        </div>
+      </div>
+
+      <div class="footer__row">
+        <div class="footer__box__7">
+          <span class="footer__text__small">
+            Newton Apartments
+            <br>
+            Использование сайта означает согласие с Пользовательским соглашением
+            и Политикой конфиденциальности Newton Apartments.
+          </span>
+
+          <span class="footer__text__small">
+            2021 Itelma Development
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
