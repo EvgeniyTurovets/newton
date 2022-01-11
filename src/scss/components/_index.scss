@@ -368,7 +368,7 @@ body{
 .btn{
     font-weight: 500;
     display: inline-block;
-    font-size: 18px;
+    font-size: inherit;
     line-height: 130%;
     text-align: center;
     padding: 12px 41px 14px;
@@ -572,6 +572,10 @@ body{
   }
   .mode__btn + .mode__btn {
     margin-left: 10px;
+  }
+  .sec3{
+    background-size: 800px auto;
+    background-position: left -50px center;
   }
 }
 @media (max-width: 575px) {

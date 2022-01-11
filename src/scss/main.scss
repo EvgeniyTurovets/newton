@@ -10,6 +10,11 @@ body{
     line-height: 1.4;
     font-weight: 400
 }
+@media(max-width: 767px){
+    body{
+        font-size: 16px;
+    }
+}
 .wrap{
     max-width: 1260px;
     padding: 0 30px;
@@ -33,3 +38,6 @@ body{
 @import "./components/header";
 @import "./components/index";
 @import "./components/footer";
+
+// страницы
+@import "./components/about";

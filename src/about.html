@@ -16,31 +16,238 @@
   <div class="app">
     @include('partials/header.html')
     <main class="main">
-      <div class="sec sec1" style="background-image: url('./img/index/sec1.jpg');">
+      <div class="sec sec1 about--sec1" style="background-image: url('./img/about/1.jpg');">
         <div class="sec1__shadow"></div>
         <div class="wrap">
           <div class="sec1__wrap">
-            <div class="sec1__col sec1__left">
-              <button class="btn-play" id="btn_play">
-                <div class="btn-play__icon">
-                  <svg class="icon">
-                    <use xlink:href="./img/sprite.svg#play"></use>
-                  </svg>
-                </div>
-                смотреть
-              </button>
-            </div>
             <div class="sec1__col sec1__right">
-              <div class="sec1__title">
-                Newton Apartments
-              </div>
-              <div class="sec1__text">
-                Умный жилой комплекс рядом с набережной
+              <div class="title">О проекте</div>
+              <div class="sec1__list">
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Функциональный жилой комплекс аппартаментов бизнес-класса в обустроенном районе Нагатино-Садовники
+                </div>
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Концепция комплекса опирается на технологии, мобильность и комфорт
+                </div>
+                
+                <div class="sec1__row">
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Каждое решение проекта нацелено на то, чтобы сделать качество вашей жизни выше
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="sec sec3 about--sec3" style="background-image: url('./img/about/sec3.jpg');">
+        <div class="wrap">
+
+          <div class="sec3__wrap">
+            <div class="title sec3__title">Расположение</div>
+
+            <div class="about--sec3__text">
+              <p> 	
+                Жилой комплекс находится в технологическом сердце Москвы — районе Нагатино-Садовники. Сохраняя свое историческое наследие, в последние годы он активно модернизируется и развивается, но остается уютным и зеленым. 
+              </p>
+              <p>
+                Инновационные технопарки и деловые центры соседствуют с парковыми зонами и современными пространствами для отдыха, делая район комфортным и приятным для жизни.</p>
+              </p>
+            </div>
+
+            <a href="" class="btn">
+              Подробнее о расположении
+            </a>
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="sec about-sec sec-shadow" style="background-image: url('./img/about/sec-right.jpg');">
+        <div class="wrap">
+          <div class="about-right-block">
+            <h2 class="title white">Инфраструктура</h2>
+            <p class="white">
+              Территория жилого комплекса — гармоничное пространство, сочетающее функциональность и комфорт. Закрытый двор без машин, дорожки для вечерних прогулок и бега, зеленые зоны и стильное общественное пространство делают 
+              NEWTON APARTMENTS уютным и удобным для жизни.
+            </p>
+            <a class="btn">Подробнее об инфраструктуре</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec about-arh" style="background-image: url('./img/about/arh.jpg');">
+        <div class="wrap">
+          <div class="about-arh__wrap">
+            <h2 class="title">
+              Архитектура
+            </h2>
+            <p>
+              Жилой комплекс занимает 1,26 Га и состоит из двух высотных башен в стиле хайтек. Каждая башня имеет собственный дизайн, переносящий нас в квартал небоскребов в Гонконге. 
+            </p>
+            <p>
+              Футуристичная геометрия, сочетание металла и стеклянных блоков, минимализм и премиальные материалы делают NEWTON APARTMENTS ярким воплощением стиля будущего.
+            </p>
+            <div class="about-arh__wrap2">
+              <div class="sec2__wrap2__item">
+                <div class="left">этажей</div>
+                <div class="mid"></div>
+                <div class="right">29</div>
+              </div>
+              <div class="sec2__wrap2__item">
+                <div class="left">апартаментов</div>
+                <div class="mid"></div>
+                <div class="right">679</div>
+              </div>
+              <div class="sec2__wrap2__item">
+                <div class="left">площадь</div>
+                <div class="mid"></div>
+                <div class="right">1,26 Га</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sec about-sec sec-shadow" style="background-image: url('./img/about/sec-right2.jpg');">
+        <div class="wrap">
+          <div class="about-justify-block">
+            <div class="left">
+              <h2 class="title white">Всё для спорта</h2>
+              <p class="white">
+                NEWTON APARTMENTS продуман так, чтобы его жители могли поддерживать здоровый образ жизни, не выходя с территории жилого комплекса 
+              </p>
+              <br>
+              <a class="btn">Подробнее о спортивной жизни в ЖК</a>
+            </div>
+            <div class="right">
+              <ul>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Просторный фитнес-клуб на 15 000 кв. м</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Два спортивных бассейна</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  SPA-комплекс</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  6 теннисных кортов</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Студия красоты</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v"></use>
+                    </svg>
+                  </span>
+                  Эко-маркет</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="sec about-dis">
+        <div class="wrap">
+          <div class="about-justify-block">
+            <div class="left">
+              <h2 class="title">Дизайнерское лобби</h2>
+              <p>
+                Дизайн лобби NEWTON APARTMENTS создан командой одного из ведущих архитектурных бюро – Balcon. Современность и уют, функциональность и изысканность — то, что впечатляет гостей с первых минут
+              </p>
+              <br>
+            </div>
+            <div class="right">
+              <ul>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  Просторный фитнес-клуб на 15 000 кв. м</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  Два спортивных бассейна</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  SPA-комплекс</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  6 теннисных кортов</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  Студия красоты</li>
+                <li>
+                  <span>
+                    <svg class="icon">
+                      <use xlink:href="./img/sprite.svg#v-black"></use>
+                    </svg>
+                  </span>
+                  Эко-маркет</li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+        <img class="about-dis-img" src="./img/about/dis.jpg">
+      </div>
+
     </main>
     @include('partials/footer.html')
     <!-- @include('html/h1.html') пример инклуда -->
