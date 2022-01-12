@@ -2228,6 +2228,12 @@ body {
     padding-bottom: 100px;
   }
 }
+@media (max-width: 1600px) {
+  .about-sec {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+}
 @media (max-width: 1200px) {
   .about-sec {
     min-height: initial;
@@ -2939,7 +2945,7 @@ body {
   background-color: #4D4D4D;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
   .about-pag {
     left: 15px;
     bottom: 15px;

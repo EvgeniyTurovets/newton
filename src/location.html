@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    @include('partials/header.html')
+    <main class="main">
+        <div class="location">
+            <div class="sec sec1 about--sec1" style="background-image: url('./img/about/1.jpg');">
+                <div class="sec1__shadow"></div>
+                <div class="wrap">
+                  <div class="sec1__wrap">
+                    <div class="sec1__col sec1__right">
+                        <p>
+                            Жилой комплекс находится в технологическом сердце Москвы — районе Нагатино-Садовники. Сохраняя свое историческое наследие, в последние годы он активно модернизируется и развивается. Но остается уютным и зеленым. Инновационные технопарки и деловые центры соседствуют с парковыми зонами и современными пространствами для отдыха, делая район комфортным и приятным для жизни. 
+                        </p>
+                        <p>
+                            Не важно, куда тебе нужно добраться: расположение NEWTON APARTMENTS одинаково удобно и пешеходам, и автомобилистам. Вокруг жилого комплекса уже есть удобная городская инфраструктура и несколько маршрутов общественного транспорта. 
+                        </p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @include('partials/footer.html')
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
