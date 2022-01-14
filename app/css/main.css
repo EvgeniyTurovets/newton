@@ -1964,6 +1964,11 @@ body {
   }
 }
 /*sec9*/
+@media (max-width: 575px) {
+  .half__paragraph {
+    font-size: 16px;
+  }
+}
 .footer {
   padding: 220px 0;
 }
