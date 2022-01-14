@@ -13,6 +13,7 @@
 .footer__row {
   display: flex;
   justify-content: space-between;
+  margin: 0 -10px;
   & + .footer__row {
     margin-top: 94px;
   }
@@ -84,6 +85,9 @@
   }
 }
 @media (max-width: 767px) {
+  .footer{
+    padding: 45px 0;
+  }
   .footer__text__small {
     font-size: 16px;
     margin: 16px 0;
@@ -108,6 +112,7 @@
   }
   .footer__row {
     flex-direction: column;
+    margin: 0;
   }
   .footer__box__7 {
     max-width: unset;
