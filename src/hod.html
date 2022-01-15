@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    
+    @include('partials/header-black.html')
+    
+    <main class="main">
+        <div class="infra" id="sec-list">
+            <div class="sec infra-start if-white content-sec">
+                <div class="wrap">
+                    <div class="title">Ход строительства</div>
+                    <div class="content__title">Прямая трансляция <br>
+                        со строительной площадки</div>
+                    <div class="hod-camera">
+                        <a href="" class="hod-camera__item" style="background-image: url('./img/hod/1.jpg');">
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Восточная камера
+                            </div>
+                        </a>
+                        <a href="" class="hod-camera__item" style="background-image: url('./img/hod/2.jpg');">
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Западная камера
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="sec if-white content-sec">
+                <div class="wrap">
+                    <div class="title">Фотоотчёт о проделанной работе</div>
+                    <div class="gallery__wrap">
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/1.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Ноябрь 2021
+                            </div>
+                        </a>
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/2.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Октябрь 2021
+                            </div>
+                        </a>
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/3.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Сентябрь 2021
+                            </div>
+                        </a>
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/4.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Август 2021
+                            </div>
+                        </a>
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/5.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Июль 2021
+                            </div>
+                        </a>
+                        <a href="" class="gallery__item">
+                            <div class="gallery__item__img" style="background-image: url('./img/gal/6.jpg');"></div>
+                            <div class="gallery__item__link">
+                                <span>
+                                    <svg class="icon">
+                                      <use xlink:href="./img/sprite.svg#v"></use>
+                                    </svg>
+                                </span>
+                                Июнь 2021
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="about-pag" id="about-pag">
+            <button type="button" class="about-pag__item active"><span></span></button>
+            <button type="button" class="about-pag__item"><span></span></button>
+          </div>
+    </main>
+    @include('partials/footer.html')
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>
