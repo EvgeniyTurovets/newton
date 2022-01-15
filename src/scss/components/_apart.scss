@@ -1,0 +1,223 @@
+.apart-dis{
+    position: relative;
+    min-height: 100vh;
+    padding-top: 264px;
+    padding-bottom: 264px;
+    color: #fff;
+    .wrap{
+        position: relative;
+        z-index: 2;
+    }
+}
+@media(min-height: 1080px){
+    .apart-dis{
+        min-height: 1080px;
+    }
+}
+
+@media(max-height: 800px){
+    .apart-dis{
+        max-height: initial;
+        padding-top: 200px;
+        padding-bottom: 150px;
+    }
+}
+
+@media(max-width: 1200px){
+    .apart-dis{
+        min-height: initial;
+        padding-top: 200px;
+        padding-bottom: 150px;
+    }
+}
+.apart-dis:after{
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(77, 77, 77, 0.5);
+}
+.apart-dis.sec-shadow:before{
+    opacity: 0.9;
+}
+.apart-dis__wrap{
+    display: flex;
+    .left{
+        width: 50%;
+        padding-right: 15px;
+        .title{
+            margin-top: 0;
+        }
+    }
+    .right{
+        width: 50%;
+        .sec1__list{
+            margin-top: 70px;
+        }
+        p{
+            padding-left: 47px;
+            text-indent: 5px;
+        }
+    }
+}
+
+@media(max-width: 991px){
+    .apart-dis{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    .apart-dis__wrap{
+        flex-direction: column;
+        .left{
+            width: 100%;
+            padding-right: 0;
+        }
+        .right{
+            width: 100%;
+            p{
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.apart-plan{
+    padding-top: 230px;
+    padding-bottom: 230px;
+    min-height: 100vh;
+    color: #fff;
+    .title{
+        margin-bottom: 36px;
+    }
+    .content__title{
+        color: #fff;
+    }
+}
+
+@media(min-height: 1080px){
+    .apart-plan{
+        min-height: 1080px;
+    }
+}
+
+@media(max-height: 800px){
+    .apart-plan{
+        max-height: initial;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+
+
+.sec-shadow-new{
+    position: relative;
+}
+.sec-shadow-new:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    content: "";
+    background-image: url(../img/index/shadow-new.png);
+    background-size: cover;
+    z-index: 1;
+}
+.sec-shadow-new .wrap{
+    position: relative;
+    z-index: 2;
+}
+.apart-plan__wrap{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    margin-top: 142px;
+}
+.apart-plan__item{
+    width: calc(100% / 3 - 40px);
+    margin: 0 20px;
+}
+.apart-plan__item__img{
+    padding-bottom: 75%;
+    background-size: contain;
+    background-position: center;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    margin-bottom: 34px;
+    display: block;
+}
+.apart-plan__item__link{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+    
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    span{
+        width: 31px;
+        height: 31px;
+        min-width: 31px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 31px;
+        background-color: #568F27;
+        border-radius: 100%;
+        transform: rotate(-90deg);
+
+        svg{
+            height: 10px;
+        }
+    }
+}
+@media(max-width: 1600px){
+    .apart-plan__wrap{
+        margin-top: 100px;
+    }
+    .apart-plan{
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+}
+@media(max-width: 1399px){
+    .apart-plan{
+        max-height: initial;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+@media(max-width: 991px){
+    .apart-plan__item{
+        width: calc(100% / 2 - 40px);
+        margin-bottom: 50px;
+    }
+    .apart-plan__item:last-child{
+        margin-bottom: 0;
+    }
+    .apart-plan{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .apart-plan__item__img{
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 575px){
+    .apart-plan__item{
+        width: calc(100% / 1 - 40px);
+        margin-bottom: 50px;
+    }
+    .apart-plan__wrap{
+        margin-top: 30px;
+    }
+    .apart-plan{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}

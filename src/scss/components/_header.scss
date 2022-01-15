@@ -239,7 +239,7 @@
     }
     .logo img, .logo svg{
         max-width: 200px;
-        max-height: 30px;
+        max-height: 49px;
     }
     .header__phone__icon{
         display: block;
@@ -330,6 +330,7 @@
 @media(max-width: 575px){
     .logo img, .logo svg{
         max-width: 125px;
+        max-height: 30px;
     }
     .burger{
         margin-left: 0;
@@ -347,53 +348,56 @@
 }
 
 .header--white{
-    .logo{
+    header:not(.scroll){
+        .logo{
+            color: #000;
+        }
         color: #000;
-    }
-    color: #000;
-    .header__text{
-        color: #000;
-    }
-    .header__phone{
-        color: #000;
-    }
-    .header__flat{
-        border: 1px solid #000;
-        color: #000;
-    }
-    .header.scroll{
-        background-color: rgb(220, 220, 220,80%);
-    }
-    .burger{
-        color: #000;
-    }
-    .header__phone__icon{
-        color: #000;
-    }
-    @media(max-width: 991px){
-        .burger-open{
-            .burger{
-                color: #fff;
-            }
-            .header__phone__icon{
-                color: #fff;
-            }
-            .logo{
-                color: #fff;
-            }
-            .header__phone{
-                color: #fff;
-            }
-            .header__flat{
-                border: 1px solid #fff;
-                color: #fff;
+        .header__text{
+            color: #000;
+        }
+        .header__phone{
+            color: #000;
+        }
+        .header__flat{
+            border: 1px solid #000;
+            color: #000;
+        }
+        .header.scroll{
+            background-color: rgb(220, 220, 220,80%);
+        }
+        .burger{
+            color: #000;
+        }
+        .header__phone__icon{
+            color: #000;
+        }
+        @media(max-width: 991px){
+            .burger-open{
+                .burger{
+                    color: #fff;
+                }
+                .header__phone__icon{
+                    color: #fff;
+                }
+                .logo{
+                    color: #fff;
+                }
+                .header__phone{
+                    color: #fff;
+                }
+                .header__flat{
+                    border: 1px solid #fff;
+                    color: #fff;
+                }
+                
             }
             
-        }
-        
-        .header.scroll.burger-open{
-            background-color: #232222;
+            .header.scroll.burger-open{
+                background-color: #232222;
+            }
         }
     }
+    
 }
    
