@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    
+    @include('partials/header-black.html')
+    
+    <main class="main">
+        <div class="infra" id="sec-list">
+            <div class="sec infra-start if-white content-sec">
+                <div class="wrap">
+                    <div class="title">Благоустройство</div>
+                    <div class="content-sec__wrap">
+                        <div class="content-sec__col">
+                            <div class="content__title">Набережная</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap wrap-gallary">
+                    <div class="wrap-gallary__wrap">
+                        <a href="./img/blago/1.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/1.jpg">
+                        </a>
+                    </div>
+                   
+                </div>
+            </div>
+
+            <div class="sec if-white content-sec">
+                <div class="wrap">
+                    <div class="content__title">Лобби</div>
+                    <div class="content-sec__wrap">
+                        <div class="content-sec__col">
+                            <p>
+                                Дизайн лобби NEWTON APARTMENTS создан командой одного из ведущих архитектурных бюро – Balcon. Современность и уют, функциональность и изысканность — то, что впечатляет гостей с первых минут.
+
+                            </p>
+                        </div>
+                        <div class="content-sec__col">
+                            <ul class="content-ul">
+                                <li> Ресепшен с консьерж-сервисом 24/7</li>
+                                <li>Мягкая мебель в лобби</li>
+                                <li>Высокие потолки и премиальная отделка</li>
+                                <li>Постоматы</li>
+                                <li>6 теннисных кортов</li>
+                                <li>Помещения для мытья лап собакам</li>
+                                <li>Отапливаемые колясочные</li>
+                                <li>Безбарьерная среда</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap wrap-gallary">
+                    <div class="wrap-gallary__wrap">
+                        <a href="./img/blago/2.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/2.jpg">
+                        </a>
+                        <a href="./img/blago/3.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/3.jpg">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sec if-white content-sec">
+                <div class="wrap">
+                    <div class="content-sec__wrap">
+                        <div class="content-sec__col">
+                            <div class="content__title">Паркинг</div>
+                            <p>
+                                Подземный паркинг на 284 машиноместа
+                               
+                            </p>
+                            <br>
+                            <ul class="content-ul">
+                                <li> Зарядка для электромобилей</li>
+                                <li>Автомойка и шиномонтаж на территории</li>
+                                <li>Доступ в паркинг на лифте с жилых этажей</li>
+                                <li>Круглосуточная охрана с видеонаблюдением</li>
+                                <li>Просторные машиноместа от 13,5 м2</li>
+                            </ul>
+                        </div>
+                        <div class="content-sec__col">
+                            <div class="content__title">Кладовые</div>
+                            <p>
+                                Мы знаем, как важно иметь дополнительное пространство для хранения вещей. Поэтому в NEWTON APARTMENTS продуманы эргономичные и просторные кладовые.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap wrap-gallary">
+                    <div class="wrap-gallary__wrap">
+                        <a href="./img/blago/4.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/4.jpg">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="sec if-white content-sec">
+                <div class="wrap">
+                    <div class="content-sec__wrap">
+                        <div class="content-sec__col">
+                            <div class="content__title">Двор</div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="wrap wrap-gallary">
+                    <div class="wrap-gallary__wrap">
+                        <a href="./img/blago/5.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/5.jpg">
+                        </a>
+                        <a href="./img/blago/6.jpg" data-fslightbox="gallery" class="wrap-gallary__item">
+                            <img src="./img/blago/6.jpg">
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="about-pag" id="about-pag">
+          <button type="button" class="about-pag__item active"><span></span></button>
+          <button type="button" class="about-pag__item"><span></span></button>
+          <button type="button" class="about-pag__item"><span></span></button>
+          <button type="button" class="about-pag__item"><span></span></button>
+        </div>
+    </main>
+    @include('partials/footer.html')
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

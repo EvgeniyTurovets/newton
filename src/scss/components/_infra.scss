@@ -1,0 +1,112 @@
+
+.content-sec{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.content-sec.infra-start{
+    padding-top: 215px;
+}
+.content-sec__wrap{
+    display: flex;
+    margin: 0 -15px;
+}
+.content-sec__col{
+    padding: 0 15px;
+    width: 50%;
+    margin-bottom: 56px;
+}
+.content-sec__col .btn{
+    margin-top: 56px;
+}
+.content__title{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 110%;
+    color: #000000;
+    margin-bottom: 49px;
+}
+
+.wrap.wrap-gallary{
+    max-width: 1690px;
+}
+.wrap-gallary__wrap{
+    display: flex;
+    margin: 0 -20px;
+}
+.wrap-gallary__item{
+    max-height: 449px;
+    padding: 20px;
+    display: block;
+    img{
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+.content-ul{
+    margin: 0;
+    padding: 0;
+    li{
+        padding: 0;
+        margin-bottom: 10px;
+        padding-left: 35px;
+        list-style: none;
+        background-image: url('../img/infra/v.svg');
+        background-position: left top 6px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media(max-width: 1200px){
+    .wrap-gallary__item{
+        padding: 10px;
+    }
+    .wrap-gallary__wrap{
+        margin: 0 -10px;
+    }
+}
+
+@media(max-width: 991px){
+    .content-sec{
+        padding-top: 50px;
+    }
+    .content-sec.infra-start{
+        padding-top: 150px;
+    }
+    .wrap-gallary__wrap{
+        flex-wrap: wrap;
+    }
+    .content-sec__col{
+        width: 100%;
+        max-width: 730px;
+        margin-bottom: 25px;
+    }
+    .content-sec__wrap{
+        flex-wrap: wrap;
+    }
+    .content-ul{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content__title{
+        margin-bottom: 25px;
+    }
+}
+
+@media(max-width: 575px){
+    .content__title{
+        font-size: 16px;
+        line-height: 110%;
+    }
+    .content-sec__col{
+        margin-bottom: 0;
+    }
+    .content-sec.infra-start{
+        padding-top: 100px;
+    }
+    .content-sec__col .btn{
+        margin-top: 25px;
+        margin-bottom: 25px;
+        font-size: 14px;
+        padding: 14px 25px;
+    }
+}

@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function(){
                 }
             }
         }
-
+        secMonitor()
         window.addEventListener('scroll', function(){
             secMonitor()
         })

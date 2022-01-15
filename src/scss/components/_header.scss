@@ -23,9 +23,13 @@
 }
 .logo{
     margin-right: 40px;
-    img{
+    color: #fff;
+    img,svg{
         display: block;
         max-width: 249px;
+    }
+    svg{
+        max-height: 58px;
     }
 }
 .header__wrap{
@@ -93,6 +97,7 @@
 }
 
 .burger{
+    color: #fff;
     width: 41px;
     height: 41px;
     display: flex;
@@ -133,6 +138,7 @@
     padding: 39px 62px;
     background: rgba(255, 255, 255, 0.91);
     min-width: 377px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
 }
 .header__nav ul{
     margin: 0;
@@ -161,6 +167,7 @@
 }
 .header__phone__icon{
     display: none;
+    color: #fff;
 }
 @media(max-width: 1260px){
     .header__flat{
@@ -199,6 +206,7 @@
     padding: 39px 62px;
     background: rgba(255, 255, 255, 0.91);
     min-width: 300px;
+    box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.3);
 }
 .header__flat__list li{
     margin-bottom: 25px;
@@ -229,8 +237,9 @@
     .header{
         height: 78px;
     }
-    .logo img{
+    .logo img, .logo svg{
         max-width: 200px;
+        max-height: 30px;
     }
     .header__phone__icon{
         display: block;
@@ -319,7 +328,7 @@
 }
 
 @media(max-width: 575px){
-    .logo img{
+    .logo img, .logo svg{
         max-width: 125px;
     }
     .burger{
@@ -337,3 +346,54 @@
     }
 }
 
+.header--white{
+    .logo{
+        color: #000;
+    }
+    color: #000;
+    .header__text{
+        color: #000;
+    }
+    .header__phone{
+        color: #000;
+    }
+    .header__flat{
+        border: 1px solid #000;
+        color: #000;
+    }
+    .header.scroll{
+        background-color: rgb(220, 220, 220,80%);
+    }
+    .burger{
+        color: #000;
+    }
+    .header__phone__icon{
+        color: #000;
+    }
+    @media(max-width: 991px){
+        .burger-open{
+            .burger{
+                color: #fff;
+            }
+            .header__phone__icon{
+                color: #fff;
+            }
+            .logo{
+                color: #fff;
+            }
+            .header__phone{
+                color: #fff;
+            }
+            .header__flat{
+                border: 1px solid #fff;
+                color: #fff;
+            }
+            
+        }
+        
+        .header.scroll.burger-open{
+            background-color: #232222;
+        }
+    }
+}
+   

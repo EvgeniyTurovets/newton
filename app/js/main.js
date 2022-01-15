@@ -170,6 +170,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     var secList = secListBlock.querySelectorAll('.sec');
     var aboutPagItems = document.getElementById('about-pag').querySelectorAll('.about-pag__item');
+    secMonitor();
     window.addEventListener('scroll', function () {
       secMonitor();
     });
