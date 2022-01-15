@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    
+    @include('partials/header.html')
+    
+    <main class="main">
+        <div class="sec sec-shadow calc" style="background-image: url('./img/calc/1.jpg');">
+            <div class="sec1__shadow"></div>
+           
+            <div class="calc__slider swiper" id="calcSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="calc__slider__item">
+                            <div class="title">Как купить</div>
+                            <div class="calc__slider__item__wrap">
+                                <p>
+                                    Покупка жилья должна быть удобной. Поэтому Итэлма Дэвелопмент предлагает гибкие программы, позволяющие приобрести апартаменты быстро, легко и безопасно.
+                                </p>
+                                <p>
+
+                                
+                                    Выгодные ипотечные программы
+                                    Мы аккредитованы банками, занимающими лидирующие позиции в сфере ипотечного кредитования. Партнерские программы с ними гарантируют выгодные условия и быстрое оформление документов.
+                                </p>
+                                <button class="btn open-calc-modal" type="button">калькулятор ипотеки</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="calc__slider__item">
+                            <div class="title">Как купить</div>
+                            <div class="calc__slider__item__wrap">
+                                <h2>Trade in</h2>
+                                <p>
+                                    Вы можете обменять свою старую квартиру на новую по программе Trade in через партнеров компании. Подробности предложения уточняйте у менеджера.
+                                </p>
+                                <button class="btn open-calc-modal" type="button">калькулятор ипотеки</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="calc__slider__item">
+                            <div class="title">Как купить</div>
+                            <div class="calc__slider__item__wrap">
+                                <h2>Рассрочка</h2>
+                                <p>
+                                    Немного не хватает на покупку понравившихся апартаментов? Воспользуйтесь рассрочкой. Это отличная альтернатива ипотеке, если вы сможете собрать нужную сумму в течение нескольких месяцев. Оформить ее можно только по паспорту, без справок о доходах. 
+                                </p>
+                                <button class="btn open-calc-modal" type="button">калькулятор ипотеки</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="calc__slider__item">
+                            <div class="title">Как купить</div>
+                            <div class="calc__slider__item__wrap">
+                                <h2>Материнский капитал</h2>
+                                <p>
+                                    Мы принимаем материнский капитал в качестве первоначального взноса, как средство для досрочного погашения кредита или в рамках оплаты рассрочки.
+                                </p>
+                                <button class="btn open-calc-modal" type="button">калькулятор ипотеки</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="calc-modal" id="calc-modal">
+            <form class="calc-modal__wrap">
+                <button class="calc-modal__close" type="button">
+                    <svg>
+                        <use xlink:href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <div class="t">Ипотечный калькулятор</div>
+                <div class="calc-modal__row">
+                    <div class="calc-modal__row__left">
+                        Стоимость апартаментов
+                    </div>
+                    <div class="calc-modal__row__right">
+                        <input type="number">
+                        <div>руб.</div>
+                    </div>
+                </div>
+                <div class="calc-modal__row">
+                    <div class="calc-modal__row__left">
+                        Первоначальный взнос
+                    </div>
+                    <div class="calc-modal__row__right">
+                        <input type="number">
+                        <div>руб.</div>
+                    </div>
+                </div>
+
+                <div class="calc-modal__row">
+                    <div class="calc-modal__row__left">
+                        Первоначальный взнос
+                    </div>
+                    <div class="calc-modal__row__right">
+                        <div class="sum">0</div>
+                        руб.
+                    </div>
+                </div>
+                
+                <div class="calc-modal__row">
+                    <div class="calc-modal__row__left">
+                        Процентная ставка
+                    </div>
+                    <div class="calc-modal__row__right">
+                        <input type="number">
+                        %
+                    </div>
+                </div>
+                <div class="calc-modal__row">
+                    <div class="calc-modal__row__left">
+                        Срок кредита
+                    </div>
+                    <div class="calc-modal__row__right">
+                        <input type="number">
+                        лет
+                    </div>
+                </div>
+
+                <div class="calc-modal__bot">
+                    <button class="btn" type="submit">рассчитать</button>
+                </div>
+               
+            </form>
+        </div>
+    </main>
+    @include('partials/footer.html')
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

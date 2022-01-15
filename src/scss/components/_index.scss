@@ -875,6 +875,12 @@ body{
   .half__wrap {
     padding: 50px 20px 60px !important;
   }
+  .half__aside{
+    padding-bottom: 0px;
+  }
+  .half__aside__btn{
+    margin-bottom: 0;
+  }
 }
 @media (max-width: 911px) {
   .half__wrap {
@@ -934,6 +940,7 @@ body{
   align-items: flex-end;
   justify-content: center;
   width: 40%;
+  padding-bottom: 116px;
 }
 .sec7__btn {
   box-sizing: border-box;
@@ -943,9 +950,15 @@ body{
   padding-left: 20px;
   padding-right: 20px;
 }
+.half__col{
+  max-width: 373px;
+}
 @media (max-width: 1800px) {
   .half__aside__btn {
     margin-bottom: 60px;
+  }
+  .half__aside{
+    padding-bottom: 0;
   }
 }
 @media (max-width: 991px) {

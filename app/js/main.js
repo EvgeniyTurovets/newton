@@ -328,6 +328,16 @@ document.addEventListener('DOMContentLoaded', function () {
     autoplay: {
       delay: 5000
     }
+  });
+  new Swiper('#calcSwiper', {
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    slidesPerView: 1 // autoplay: {
+    //   delay: 5000,
+    // },
+
   }); //footer drop
 
   var footerBtns = document.querySelectorAll('.footer__drop__btn');
@@ -350,6 +360,18 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   footerWidth();
+  var openCalcBtn = document.querySelectorAll('.open-calc-modal');
+
+  if (openCalcBtn) {
+    openCalcBtn.forEach(function (btn) {
+      return btn.addEventListener('click', function () {
+        document.getElementById('calc-modal').classList.add('active');
+      });
+    });
+    document.querySelector('.calc-modal__close').addEventListener('click', function () {
+      document.getElementById('calc-modal').classList.remove('active');
+    });
+  }
 });
 "use strict";
 //# sourceMappingURL=main.js.map
