@@ -383,11 +383,29 @@
 .about-dis{
     background-color: #fff;
     background-repeat: no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     background-position: bottom center;
+    color: #fff;
+    background-attachment: fixed;
+    min-height: 100vh;
     .about-justify-block{
         padding-top: 207px;
         padding-bottom: 111px;
+    }
+}
+@media(max-height: 700px){
+    .about-dis{
+        min-height: initial;
+    }
+}
+@media(max-width: 1200px){
+    .about-dis{
+        min-height: initial;
+    }
+}
+@media(min-height: 1080px){
+    .about-dis{
+        min-height: 1080px;
     }
 }
 .about-dis-img{
