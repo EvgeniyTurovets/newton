@@ -65,9 +65,10 @@ document.addEventListener('DOMContentLoaded', function () {
     speed: 500,
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
   });
 
@@ -77,9 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
+      clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
     breakpoints: {
       320: {
@@ -102,9 +104,10 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
+      clickable: true,
     },
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
     breakpoints: {
       320: {
@@ -127,11 +130,11 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
-      clickable: 'true',
+      clickable: true,
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
   });
 
@@ -141,11 +144,11 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
-      clickable: 'true',
+      clickable: true,
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
   });
 
@@ -181,13 +184,14 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000,
+      delay: 6000,
     },
   });
   
   var openCalcBtn = document.querySelectorAll('.open-calc-modal')
 
-  if(openCalcBtn){
+  if(openCalcBtn.length){
+    
     openCalcBtn.forEach(btn => btn.addEventListener('click', function(){
       document.getElementById('calc-modal').classList.add('active')
     }))

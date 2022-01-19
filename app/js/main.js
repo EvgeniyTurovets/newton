@@ -249,10 +249,11 @@ document.addEventListener('DOMContentLoaded', function () {
     spaceBetween: 20,
     speed: 500,
     pagination: {
-      el: '.swiper-pagination'
+      el: '.swiper-pagination',
+      clickable: true
     },
     autoplay: {
-      delay: 5000
+      delay: 6000
     }
   });
   new Swiper('#partition__slider-1', {
@@ -260,10 +261,11 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.partition__pagination',
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
-      type: 'bullets'
+      type: 'bullets',
+      clickable: true
     },
     autoplay: {
-      delay: 5000
+      delay: 6000
     },
     breakpoints: {
       320: {
@@ -284,10 +286,11 @@ document.addEventListener('DOMContentLoaded', function () {
       el: '.partition__pagination',
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
-      type: 'bullets'
+      type: 'bullets',
+      clickable: true
     },
     autoplay: {
-      delay: 5000
+      delay: 6000
     },
     breakpoints: {
       320: {
@@ -309,11 +312,11 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
-      clickable: 'true'
+      clickable: true
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000
+      delay: 6000
     }
   });
   new Swiper('#sec7-slider', {
@@ -322,11 +325,11 @@ document.addEventListener('DOMContentLoaded', function () {
       bulletClass: 'custom-pagination-bullet',
       bulletActiveClass: 'custom-pagination-bullet-active',
       type: 'bullets',
-      clickable: 'true'
+      clickable: true
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000
+      delay: 6000
     }
   }); //footer drop
 
@@ -357,12 +360,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 5000
+      delay: 6000
     }
   });
   var openCalcBtn = document.querySelectorAll('.open-calc-modal');
 
-  if (openCalcBtn) {
+  if (openCalcBtn.length) {
     openCalcBtn.forEach(function (btn) {
       return btn.addEventListener('click', function () {
         document.getElementById('calc-modal').classList.add('active');
