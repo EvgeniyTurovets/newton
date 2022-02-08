@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>New site</title>
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="app">
+    @include('partials/header-black.html')
+    <main class="main">
+        <div class="choose-flat">
+            <div class="wrap">
+                <div class="choose-flat__wrap1">
+                    <div class="choose-flat__col1">
+                        <div class="choose-flat__t">
+                            Выбор по этажу
+                        </div>
+                        <div class="choose-flat__list">
+                            <div class="left">
+                                Ключи
+                            </div>
+                            <div class="mid">
+
+                            </div>
+                            <div class="right">
+                                до 30.11.24
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav class="apart__nav apart__nav--white">
+                    <ul>
+                      <li >
+                        <a href="">
+                          выбор апартаментов на ген.плане
+                        </a>
+                      </li>
+                      <li class="active">
+                        <a href="">
+                          выбор по этажу
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          планировка квартиры
+                        </a>
+                      </li>
+                      <li>
+                        <a href="">
+                          выбор по параметрам
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </main>
+@include('partials/footer.html')
+</div>
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon/favicon-16x16.png">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#111111">
   <title>New site</title>
@@ -28,12 +30,13 @@
                     <div class="header__text">
                     Умный жилой комплекс 
                     рядом с набережной
+                    <span>+7 495 745 75 75</span>
                      </div>
                 </div>
                 <div class="header__wrap__right">
-                    <div class="header__phone">
-                        +7 495 745 75 75
-                    </div>
+                    <button type="button" class="header__phone">
+                        обратный звонок
+                    </button>
                     <a href="tel:+74957457575" class="header__phone__icon">
                         <svg class="icon">
                             <use xlink:href="./img/sprite.svg#phone"></use>
@@ -49,16 +52,16 @@
     
                         <ul class="header__flat__list">
                             <li>
-                                <a href="">Квартира</a>
+                                <a href="plan.html">
+                                    <img src="./img/index/flat-img1.png">
+                                    Выбрать на ген.плане
+                                </a>
                             </li>
                             <li>
-                                <a href="">Квартира 2</a>
-                            </li>
-                            <li>
-                                <a href="">Квартира 3</a>
-                            </li>
-                            <li>
-                                <a href="">Квартира 4</a>
+                                <a href="">
+                                    <img src="./img/index/flat-img2.png">
+                                    Выбрать по параметрам
+                                </a>
                             </li>
                         </ul>
                     </button>
@@ -118,92 +121,104 @@
           </div>
     </main>
     <footer class="footer">
-  <div class="wrap">
-    <div class="footer__wrap">
-
-      <div class="footer__row">
-        <div class="footer__box__6">
-          <span class="footer__text__small">адрес жилого комплекса</span>
-          <span class="footer__text__big">Москва. Нагатинский проезд 8</span>
+    <div class="wrap">
+      <div class="footer__wrap">
+  
+        <div class="footer__top">
+            <div class="footer__top__left">
+                <div class="footer__office">
+                    <span>офис продаж</span>
+                    Москва. Нагатинский проезд, 10 с1
+                </div>
+                <nav class="footer__nav">
+                    <div class="footer__nav__col">
+                        <div class="footer__nav__name">
+                            О проекте
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">Расположение</a>
+                            </li>
+                            <li>
+                                <a href="">Инфратруктура</a>
+                            </li>
+                            <li>
+                                <a href="">Благосутройство</a>
+                            </li>
+                            <li>
+                                <a href="">Апартаменты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__nav__col">
+                        <div class="footer__nav__name">
+                            Информация
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="">  О застройщике</a>
+                            </li>
+                            <li>
+                                <a href="">Ход строительства</a>
+                            </li>
+                            <li>
+                                <a href="">Условия покупки</a>
+                            </li>
+                            <li>
+                                <a href="">Документация</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="footer__top__right">
+                <div class="footer__text">
+                    + 7 (495) 000 - 00 - 00
+                </div>
+                <div class="footer__text">
+                    newton-apartment.ru
+                </div>
+                <div class="footer__text">
+                    c 9.00 до 21.00 ежедневно
+                </div>
+                <a href="" class="footer__policy">Политика обработки персональных данных</a>
+                <ul class="footer__soc">
+                    <li>
+                        <a href="">
+                            <img src="./img/soc/1.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/soc/2.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/soc/3.svg">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./img/soc/4.svg">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-
-        <div class="footer__box__6">
-          <span class="footer__text__small">офис продаж</span>
-          <span class="footer__text__big">Москва. Нагатинский проезд, 10 с1 м.Нагатинская</span>
+        <div class="footer__bot">
+            <div class="footer__bot__text">Девелопер</div>
+            <div class="footer__bot__row">
+                <img src="./img/index/develop-logo.svg">
+                <div class="footer__bot__text2">
+                    Не является публичной офертой.
+                    Визуализации и планировки обьекта являются ориентировочными
+                </div>
+            </div>
         </div>
       </div>
-
-      <div class="footer__row">
-        <div class="footer__box__3 footer__drop">
-          <span class="footer__text__big footer__drop__btn">
-            Информация о проекте
-            <span class="footer__drop__arrow">
-              <svg class="icon">
-                <use xlink:href="./img/sprite.svg#v-black"></use>
-              </svg>
-            </span>
-          </span>
-
-          <div class="footer__drop__box">
-            <a href="#" class="footer__text__small">Проект на ДОМ.РФ</a>
-            <a href="#" class="footer__text__small">Ипотека</a>
-          </div>
-        </div>
-
-        <div class="footer__box__3 footer__drop">
-          <span class="footer__text__big footer__drop__btn">
-            О застройщике
-            <span class="footer__drop__arrow">
-              <svg class="icon">
-                <use xlink:href="./img/sprite.svg#v-black"></use>
-              </svg>
-            </span>
-          </span>
-
-          <div class="footer__drop__box">
-            <a href="#" class="footer__text__small">Портфолио реализованных объектов <span></span></a>
-            <a href="#" class="footer__text__small">Контакты</a>
-          </div>
-        </div>
-
-        <div class="footer__box__3 footer__drop">
-          <span class="footer__text__big footer__drop__btn">
-            Коммерческая недвижимость
-            <span class="footer__drop__arrow">
-              <svg class="icon">
-                <use xlink:href="./img/sprite.svg#v-black"></use>
-              </svg>
-            </span>
-          </span>
-          <div class="footer__drop__box">
-            <a href="#" class="footer__text__small">Схема помещений</a>
-          </div>
-        </div>
-
-        <div class="footer__box__3">
-          <span class="footer__text__small">Подписаться на новости NEWTON APPARTMENTS@</span>
-          <a href="" target="_blank" class="btn btn-green">подписаться</a>
-        </div>
-      </div>
-
-      <div class="footer__row">
-        <div class="footer__box__7">
-          <span class="footer__text__small">
-            Newton Apartments
-            <br>
-            Использование сайта означает согласие с Пользовательским соглашением
-            и Политикой конфиденциальности Newton Apartments.
-          </span>
-
-          <span class="footer__text__small">
-            2021 Itelma Development
-          </span>
-        </div>
-      </div>
-
     </div>
-  </div>
-</footer>
+  </footer>
 </div>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

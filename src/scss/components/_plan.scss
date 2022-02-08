@@ -1,0 +1,214 @@
+
+.sec-apart{
+    padding-top: 230px;
+    padding-bottom: 150px;
+    color: #fff;
+}
+  .sec-apart.sec-shadow:before{
+    background-image: url('../img/index/appart-shadow.png');
+  }
+  
+  
+  @media(max-width: 1399px){
+    .sec-apart{
+      max-height: initial;
+      padding-top: 200px;
+      padding-bottom: 100px;
+    }
+  }
+  .sec-apart__row{
+    display: flex;
+    align-items: center;
+    margin-top: 257px;
+    margin-bottom: 257px;
+    .btn{
+      width: 241px;
+    }
+    .btn:hover{
+      opacity: 1;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.20);
+    }
+  }
+  
+  .sec-apart__row__left{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+  }
+  
+  .sec-apart__row__list{
+    flex: 1;
+    display: flex;
+    padding: 0 25px;
+  }
+  
+  .sec-apart__row__list .flat-checkbox{
+    margin: 0 25px;
+  }
+  
+  .flat-checkbox{
+    cursor: pointer;
+    input{
+      display: none;
+    }
+    input + span{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 51px;
+      height: 51px;
+      border-radius: 100%;
+      border: 1px solid #FFFFFF;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 110%;
+      transition: 0.1s all;
+    }
+    input:checked + span{
+      background-color: #568F27;
+      border: 1px solid #568F27;
+    }
+  }
+  .flat-checkbox:hover{
+    span{
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .apart__nav{
+    margin-top: 50px;
+  }
+  .apart__nav ul{
+    display: flex;
+    align-items: flex-start;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .apart__nav ul li{
+    max-width: 194px;
+    list-style: none;
+  }
+  .apart__nav ul li.active{
+    border-bottom: 1px dashed #fff;
+  }
+  .apart__nav ul li a{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FFFFFF;
+    display: block;
+    padding-bottom: 12px;
+  }
+  .apart__nav--white{
+    ul li.active{
+        border-bottom: 1px dashed #000;
+    }
+    ul li a{
+        color: #000;
+    }
+  }
+
+.apart__nav ul li a:hover{
+    opacity: 0.8;
+}
+
+@media(max-width: 1200px){
+    .sec-apart__row{
+        margin-top: 150px;
+        margin-bottom: 150px;
+    }
+}
+
+@media(max-width: 991px){
+    .sec-apart__row__list .flat-checkbox{
+        margin: 0 15px;
+    }
+    .sec-apart__row{
+        flex-direction: column;
+    }
+    .apart__next{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+        margin-top: 35px;
+    }
+    .sec-apart__row{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .sec-apart__row__left{
+        margin-bottom: 25px;
+    }
+    .sec-apart{
+        padding-top: 150px;
+    }
+    .apart__nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .apart__nav ul li{
+        margin-bottom: 25px;
+        max-width: 305px;
+    }
+    .apart__nav ul li a{
+        text-align: center;
+        padding-bottom: 5px;
+    }
+    .apart__nav ul li:last-child{
+        margin-bottom: 0;
+    }
+
+    .sec-apart .title{
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .sec-apart__row__list{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .sec-apart__row__left{
+        text-align: center;
+    }
+}
+
+@media(max-width: 575px){
+    .sec-apart__row__list .flat-checkbox{
+        margin: 0 6px;
+    }
+    .sec-apart__row{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .sec-apart{
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+.choose-flat{
+    padding-top: 230px;
+}
+.choose-flat__wrap1{
+    display: flex;
+}
+.choose-flat__t{
+    font-weight: bold;
+    font-size: 46px;
+    line-height: 110%;
+    margin-bottom: 64px;
+}
+
+.choose-flat__list{
+    display: flex;
+    .left{
+        width: 120px;
+    }
+    .mid{
+        height: 2px;
+        width: 45px;
+        background-image: url('../img/plan/line.png');
+    }
+}

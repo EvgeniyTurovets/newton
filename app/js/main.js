@@ -203,14 +203,22 @@ document.addEventListener('DOMContentLoaded', function () {
 
   headerFix();
   var burger = document.getElementById('burger');
+  var burgerfFag = true;
   burger.addEventListener('click', function () {
-    burger.closest('.header-menu').classList.toggle('active');
-    header.classList.toggle('burger-open');
+    if (burgerfFag) {
+      burgerfFag = false;
+      burger.closest('.header-menu').classList.toggle('active');
+      header.classList.toggle('burger-open');
 
-    if (window.innerWidth > 991) {
-      slideToggle(burger.closest('.header-menu').querySelector('.header__nav'), 300, 'block');
-    } else {
-      fadeToggle(burger.closest('.header-menu').querySelector('.header__nav'), 300, 'block');
+      if (window.innerWidth > 991) {
+        slideToggle(burger.closest('.header-menu').querySelector('.header__nav'), 300, 'block');
+      } else {
+        fadeToggle(burger.closest('.header-menu').querySelector('.header__nav'), 300, 'block');
+      }
+
+      setTimeout(function () {
+        burgerfFag = true;
+      }, 300);
     }
   });
   document.addEventListener('click', function (e) {
@@ -243,19 +251,19 @@ document.addEventListener('DOMContentLoaded', function () {
   window.addEventListener('resize', function () {
     refreshHeader();
     footerWidth();
-  });
-  var swiper = new Swiper('.sec2__slider', {
-    // If we need pagination
-    spaceBetween: 20,
-    speed: 500,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true
-    },
-    autoplay: {
-      delay: 6000
-    }
-  });
+  }); // const swiper = new Swiper('.sec2__slider', {
+  //   // If we need pagination
+  //   spaceBetween: 20,
+  //   speed: 500,
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     clickable: true,
+  //   },
+  //   autoplay: {
+  //     delay: 6000,
+  //   },
+  // });
+
   new Swiper('#partition__slider-1', {
     pagination: {
       el: '.partition__pagination',
@@ -316,7 +324,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     slidesPerView: 1,
     autoplay: {
-      delay: 6000
+      delay: 7000
     }
   });
   new Swiper('#sec7-slider', {
