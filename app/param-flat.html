@@ -16,7 +16,6 @@
 
 <body>
   <div class="app">
-    
     <div class="header--white">
     <header class="header" id="header">
         <div class="wrap">
@@ -109,89 +108,170 @@
         </div>
     </header>
 </div>
-    
     <main class="main">
-        <div class="infra">
-            <div class="sec infra-start content-sec">
-                <div class="wrap">
-                    <div class="title">Галерея</div>
-                    <div class="gallery__wrap">
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/1.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Архтектура
+        <div class="param-flat">
+            <div class="wrap">
+                <div class="param-flat__title">
+                    Выбрать квартиру по параметрам
+                </div>
+                <div class="param-flat__top">
+                    <div class="param-flat__top__col param-flat__top__col--1">
+                        <label class="param-flat__label">
+                            Стоимость
+                        </label>
+                        <div class="param-flat__top__content">
+                            <div class="input-range input-range--price">
+                                <div class="input-range__point input-range__start">
+                                    <span>
+                                        6 525 000 Р
+                                    </span>
+                                </div>
+                                <input class="range-slider" type="range" min=" 6525000" max="12000000" value="8500000" step="1" data-sufix="Р">
+                                <div class="input-range__point input-range__end">
+                                    <span>
+                                    12 000 000 Р
+                                    </span>
+                                </div>
                             </div>
-                        </a>
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/2.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Лобби и МОПы
+                        </div>
+                    </div>
+                    <div class="param-flat__top__col param-flat__top__col--2">
+                        <label class="param-flat__label">
+                            Площадь
+                        </label>
+                        <div class="param-flat__top__content">
+                            <div class="input-range input-range--sq">
+                                <div class="input-range__point input-range__start">
+                                    <span>
+                                        15 м2
+
+                                    </span>
+                                </div>
+                                <input class="range-slider" type="range" min="15" max="250" value="5" step="1" data-sufix="м2">
+                                <div class="input-range__point input-range__end">
+                                    <span>
+                                        250 м2
+                                    </span>
+                                </div>
                             </div>
-                        </a>
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/3.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Патио на крыше
+                        </div>
+                    </div>
+                    <div class="param-flat__top__col param-flat__top__col--3">
+                        <label class="param-flat__label">
+                            Башня
+                        </label>
+                        <div class="param-flat__top__content">
+                            <div class="param-flat__type">
+                                <a href="">белая</a>
+                                <a href="" class="active">стальная</a>
                             </div>
-                        </a>
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/4.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Двор
-                            </div>
-                        </a>
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/5.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Аппартаменты 
-                                (варианты отделки) 
-                            </div>
-                        </a>
-                        <a href="" class="gallery__item">
-                            <div class="gallery__item__img" style="background-image: url('./img/gal/6.jpg');"></div>
-                            <div class="gallery__item__link">
-                                <span>
-                                    <svg class="icon">
-                                      <use xlink:href="./img/sprite.svg#v"></use>
-                                    </svg>
-                                </span>
-                                Аппартаменты 
-                                (виды из окон) 
-                            </div>
-                        </a>
+                        </div>
                     </div>
                 </div>
-                
+                <div class="param-flat__mid">
+                    <div class="param-flat__mid__left">
+                        <label class="param-flat__label">
+                            Количество комнат
+                        </label>
+                        <div class="param-flat__checkboxes">
+                            <label class="param-flat__checkbox">
+                                <input type="checkbox" checked>
+                                <span>
+                                    СТ
+                                </span>
+                            </label>
+                            <label class="param-flat__checkbox">
+                                <input type="checkbox">
+                                <span>
+                                    1
+                                </span>
+                            </label>
+                            <label class="param-flat__checkbox">
+                                <input type="checkbox">
+                                <span>
+                                    2
+                                </span>
+                            </label>
+                            <label class="param-flat__checkbox">
+                                <input type="checkbox">
+                                <span>
+                                    3
+                                </span>
+                            </label>
+                            <label class="param-flat__checkbox">
+                                <input type="checkbox">
+                                <span>
+                                    4
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="param-flat__mid__right">
+                        <button type="button">скрыть расширенный фильтр</button>
+                        <button type="button">сбросить фильтры</button>
+                    </div>
+                </div>
+                <div class="param-flat__bot">
+                    <div class="param-flat__bot__col param-flat__bot__col--1">
+                        <label class="param-flat__label">
+                            Этаж
+                        </label>
+                        <div class="custom-select" style="width:64px;">
+                            <select>
+                              <option value="0"></option>
+                              <option value="1">1</option>
+                              <option value="1">2</option>
+                              <option value="1">3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="param-flat__bot__col param-flat__bot__col--2">
+                        <label class="param-flat__label">
+                            Срок сдачи
+                        </label>
+                        <input type="text">
+                    </div>
+                    <div class="param-flat__bot__col param-flat__bot__col--3">
+                        <label class="param-flat__label">
+                            Отделка
+                        </label>
+                        <div class="custom-select" style="width:207px;">
+                            <select>
+                              <option value="0"></option>
+                              <option value="1">Вариант 1</option>
+                              <option value="1">Вариант 2</option>
+                              <option value="1">Вариант 3</option>
+                            </select>
+                        </div>
+                    </div> 
+                </div>
+                <div class="param-flat__title">
+                    Выбрать квартиру по параметрам
+                </div>
+                <div class="param-flat__row">
+                    <a href="" class="param-flat__item">
+                        <div class="param-flat__item__img" style="background-image: url('./img/plan/plan-img.png');"></div>
+                        <div class="param-flat__item__text1">Квартира 102,4 м2 <span>5 комнат, 14 этаж</span></div>
+                        <div class="param-flat__item__text2">44 000 000 руб.</div>
+                        <div class="param-flat__item__text1">Белая Башня </div>
+                    </a>
+                    <a href="" class="param-flat__item">
+                        <div class="param-flat__item__img" style="background-image: url('./img/plan/plan-img.png');"></div>
+                        <div class="param-flat__item__text1">Квартира 102,4 м2 <span>5 комнат, 14 этаж</span></div>
+                        <div class="param-flat__item__text2">44 000 000 руб.</div>
+                        <div class="param-flat__item__text1">Белая Башня </div>
+                    </a>
+                    <a href="" class="param-flat__item">
+                        <div class="param-flat__item__img" style="background-image: url('./img/plan/plan-img.png');"></div>
+                        <div class="param-flat__item__text1">Квартира 102,4 м2 <span>5 комнат, 14 этаж</span></div>
+                        <div class="param-flat__item__text2">44 000 000 руб.</div>
+                        <div class="param-flat__item__text1">Белая Башня </div>
+                    </a>
+                </div>
             </div>
         </div>
-        
     </main>
-    <footer class="footer">
+<footer class="footer">
     <div class="wrap">
       <div class="footer__wrap">
   
