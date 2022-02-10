@@ -207,8 +207,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
     document.querySelector('.calc-modal__close').addEventListener('click', function(){
       document.getElementById('calc-modal').classList.remove('active')
+     
     })
   }
+
+  var header__phone = document.querySelector('.header__phone')
+  var backModal = document.getElementById('back-modal')
+  var backModalSenk = document.getElementById('back-modal-senk')
+  var backModalForm = document.getElementById('back-modal-form')
+  var backModalClose = document.getElementById('back-modal__close')
+  header__phone.addEventListener('click', function(){
+    fadeIn(backModal, 300, 'flex')
+  })
+  backModalForm.addEventListener('submit', function(e){
+    e.preventDefault()
+    fadeOut(backModal)
+    fadeIn(backModalSenk, 300, 'flex')
+    return false;
+  })
+  backModalClose.addEventListener('click', function(){
+    fadeOut(backModalSenk)
+  })
+
+  document.querySelectorAll('.back-modal__close').forEach(function(el, index){
+    el.addEventListener('click', function(){
+      fadeOut(backModal)
+      fadeOut(backModalSenk)
+    })
+  })
 })
 
 

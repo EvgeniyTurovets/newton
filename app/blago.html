@@ -334,6 +334,61 @@
       </div>
     </div>
   </footer>
+<div class="back-modal" id="back-modal">
+    <form class="back-modal__wrap" id="back-modal-form">
+        <button class="calc-modal__close back-modal__close" type="button">
+            <svg>
+                <use xlink:href="./img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <div class="back-modal__row">
+            <input type="text" placeholder="Имя" required>
+        </div>
+        <div class="back-modal__row">
+            <input type="text" placeholder="E-mail">
+        </div>
+        <div class="back-modal__row">
+            <input type="text" placeholder="Телефон" required>
+        </div>
+        <div class="back-modal__row">
+            <textarea placeholder="Что Вас заинтересовало?"></textarea>
+        </div>
+        <div class="back-modal__row">
+            <label class="checkbox">
+                <input type="checkbox" checked="">
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+                    <line x1="8.38977" y1="0.344447" x2="2.67467" y2="6.35793" stroke="#568F27"></line>
+                    <line x1="0.379913" y1="2.98646" x2="2.69235" y2="5.68909" stroke="#568F27"></line>
+                  </svg>
+                </span>
+                Я согласен с условиями политики конфиденциальности
+              </label>
+        </div>
+        
+        <div class="back-modal__btn">
+            <button type="submit" class="btn btn-green ">
+                отправить
+            </button>
+        </div>
+    </form>
+</div>
+
+<div class="back-modal" id="back-modal-senk">
+    <div class="back-modal__wrap">
+        <button class="calc-modal__close back-modal__close" type="button">
+            <svg>
+                <use xlink:href="./img/sprite.svg#close"></use>
+            </svg>
+        </button>
+        <div class="back-modal__title">Спасибо!<br> мы свяжемся с Вами</div>
+        <div class="back-modal__btn">
+            <button type="button" id="back-modal__close" class="btn btn-green ">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
 </div>
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

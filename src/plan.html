@@ -19,65 +19,65 @@
     @include('partials/header.html')
     <main class="main">
     <div class="sec sec-apart sec-shadow" style="background-image: url('./img/index/sec-apart.jpg');">
-    <div class="wrap">
-      <div class="sec-apart__wrap">
-        <div class="title">Выбор апартаментов на ген. плане</div>
-        <div class="sec-apart__row">
-          <div class="sec-apart__row__left">
-            Выберите тип квартиры:
+      <div class="wrap">
+        <div class="sec-apart__wrap">
+          <div class="title">Выбор апартаментов на ген. плане</div>
+          <div class="sec-apart__row">
+            <div class="sec-apart__row__left">
+              Выберите тип квартиры:
+            </div>
+            <div class="sec-apart__row__list">
+              <label class="flat-checkbox">
+                <input type="checkbox" checked>
+                <span>CT</span>
+              </label>
+              <label class="flat-checkbox">
+                <input type="checkbox">
+                <span>1</span>
+              </label>
+              <label class="flat-checkbox">
+                <input type="checkbox">
+                <span>2</span>
+              </label>
+              <label class="flat-checkbox">
+                <input type="checkbox">
+                <span>3</span>
+              </label>
+              <label class="flat-checkbox">
+                <input type="checkbox">
+                <span>4</span>
+              </label>
+            </div>
+            <div class="apart__next">
+              <a href="" class="btn btn-green">Выбрать</a>
+            </div>
           </div>
-          <div class="sec-apart__row__list">
-            <label class="flat-checkbox">
-              <input type="checkbox" checked>
-              <span>CT</span>
-            </label>
-            <label class="flat-checkbox">
-              <input type="checkbox">
-              <span>1</span>
-            </label>
-            <label class="flat-checkbox">
-              <input type="checkbox">
-              <span>2</span>
-            </label>
-            <label class="flat-checkbox">
-              <input type="checkbox">
-              <span>3</span>
-            </label>
-            <label class="flat-checkbox">
-              <input type="checkbox">
-              <span>4</span>
-            </label>
-          </div>
-          <div class="apart__next">
-            <a href="" class="btn btn-green">Выбрать</a>
-          </div>
+          <!-- <nav class="apart__nav">
+            <ul>
+              <li class="active">
+                <a href="">
+                  выбор апартаментов на ген.плане
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  выбор по этажу
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  планировка квартиры
+                </a>
+              </li>
+              <li>
+                <a href="">
+                  выбор по параметрам
+                </a>
+              </li>
+            </ul>
+          </nav> -->
         </div>
-        <nav class="apart__nav">
-          <ul>
-            <li class="active">
-              <a href="">
-                выбор апартаментов на ген.плане
-              </a>
-            </li>
-            <li>
-              <a href="">
-                выбор по этажу
-              </a>
-            </li>
-            <li>
-              <a href="">
-                планировка квартиры
-              </a>
-            </li>
-            <li>
-              <a href="">
-                выбор по параметрам
-              </a>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
     </div>
 </main>
 @include('partials/footer.html')
