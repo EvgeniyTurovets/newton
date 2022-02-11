@@ -17,6 +17,9 @@
     display: flex;
     justify-content: space-between;
 }
+.location-sec1__metro{
+    flex: 1;
+}
 .metro__list{
     flex: 1;
 }
@@ -39,7 +42,7 @@
         }
     }
     .time{
-        // min-width: 65px;
+        width: 150px;
     }
     .line{
         margin-right: 12px;
