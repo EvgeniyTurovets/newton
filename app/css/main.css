@@ -5983,13 +5983,13 @@ body, html {
 .input-range__point.input-range__start {
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .input-range__point.input-range__end {
   top: 50%;
   right: 0;
-  transform: translateY(-50%);
+  transform: translateY(-50%) translateX(50%);
 }
 
 .input-range--price {
