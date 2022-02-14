@@ -30,16 +30,15 @@
                         </label>
                         <div class="param-flat__top__content">
                             <div class="input-range input-range--price">
+                                <input type="hidden" value="" class="input-start">
+                                <input type="hidden" value="" class="input-end">
                                 <div class="input-range__point input-range__start">
-                                    <span>
-                                        6 525 000 Р
-                                    </span>
+                                    <span>6 525 000 Р</span>
                                 </div>
-                                <input class="range-slider" type="range" min=" 6525000" max="12000000" value="8500000" step="1" data-sufix="Р">
+                                <div class="new-range-slider" data-min="6525000" data-max="12000000" data-start="6925000" data-end="11000000" data-sufix="Р"></div>
+
                                 <div class="input-range__point input-range__end">
-                                    <span>
-                                    12 000 000 Р
-                                    </span>
+                                    <span>12 000 000 Р</span>
                                 </div>
                             </div>
                         </div>
@@ -49,7 +48,7 @@
                             Площадь
                         </label>
                         <div class="param-flat__top__content">
-                            <div class="input-range input-range--sq">
+                            <!-- <div class="input-range input-range--sq">
                                 <div class="input-range__point input-range__start">
                                     <span>
                                         15 м2
@@ -61,6 +60,19 @@
                                     <span>
                                         250 м2
                                     </span>
+                                </div>
+                            </div> -->
+                           
+                            <div class="input-range input-range--sq">
+                                <input type="hidden" value="" class="input-start">
+                                <input type="hidden" value="" class="input-end">
+                                <div class="input-range__point input-range__start">
+                                    <span> 15 м2</span>
+                                </div>
+                                <div class="new-range-slider" data-min="15" data-max="250" data-start="50" data-end="100" data-sufix="м2"></div>
+
+                                <div class="input-range__point input-range__end">
+                                    <span>250 м2</span>
                                 </div>
                             </div>
                         </div>

@@ -6348,4 +6348,55 @@ body, html {
     width: calc(100% - 44px);
   }
 }
+.slider {
+  height: 1px;
+  background-color: #000;
+  border: 0;
+}
+
+.slider .handle {
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #568F27;
+  border: 1px solid #568F27;
+}
+
+.slider .handle:active {
+  box-shadow: 0 0 0.5rem #568F27;
+  border-color: #568F27;
+}
+
+.slider .slider-circle {
+  display: none;
+}
+
+.slider .slider-fill {
+  background: #568F27;
+}
+
+.slider .handle {
+  z-index: 6;
+}
+
+.slider .handle.ontop {
+  z-index: 6;
+}
+
+.slider .handle span {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 130%;
+  white-space: nowrap;
+  background-color: #fff;
+  padding: 0 10px;
+}
 /*# sourceMappingURL=main.css.map */

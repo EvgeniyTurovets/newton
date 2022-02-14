@@ -454,5 +454,37 @@ myRangeSlider.forEach(function (el, index) {
     }
   });
 });
+var rangeSlider = document.querySelectorAll('.new-range-slider');
+rangeSlider.forEach(function (el, index) {
+  var sufix = el.getAttribute('data-sufix');
+  var slider = new Slider(el, {
+    isDate: false,
+    min: Number(el.getAttribute('data-min')),
+    max: Number(el.getAttribute('data-max')),
+    start: Number(el.getAttribute('data-start')),
+    end: Number(el.getAttribute('data-end')),
+    overlap: true
+  });
+  var handleLeft = el.closest('.input-range').querySelector('.input-range__start');
+  var handleRight = el.closest('.input-range').querySelector('.input-range__end');
+  var inputStart = el.closest('.input-range').querySelector('.input-start');
+  var inputEnd = el.closest('.input-range').querySelector('.input-end');
+
+  function rangeChange(data) {
+    var divideVal = data.right.toDivide();
+    handleRight.innerHTML = '';
+    handleRight.insertAdjacentHTML('afterbegin', '<span>' + divideVal + ' ' + sufix + '</span>');
+    var divideVal = data.left.toDivide();
+    handleLeft.innerHTML = '';
+    handleLeft.insertAdjacentHTML('afterbegin', '<span>' + divideVal + ' ' + sufix + '</span>');
+    inputStart.value = data.left;
+    inputEnd.value = data.right;
+  }
+
+  rangeChange(slider.getInfo());
+  slider.subscribe('moving', function (data) {
+    rangeChange(data);
+  });
+});
 "use strict";
 //# sourceMappingURL=main.js.map
